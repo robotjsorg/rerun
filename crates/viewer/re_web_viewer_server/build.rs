@@ -5,8 +5,8 @@ fn main() {
     // See `Cargo.toml` docs for the `__ci` feature for more information about the `disable_web_viewer_server` cfg.
     #[cfg(not(any(disable_web_viewer_server, feature = "__ci")))]
     {
-        let viewer_js_path = std::path::Path::new("./web_viewer/re_viewer.js");
-        let viewer_wasm_path = std::path::Path::new("./web_viewer/re_viewer_bg.wasm");
+        let viewer_js_path = std::path::Path::new("../../../web_viewer/re_viewer.js");
+        let viewer_wasm_path = std::path::Path::new("../../../web_viewer/re_viewer_bg.wasm");
 
         assert!(
             viewer_js_path.exists() && viewer_wasm_path.exists(),

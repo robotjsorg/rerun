@@ -90,7 +90,7 @@ serde = { workspace = true, features = ["derive"], optional = true }
 tobj = { workspace = true, optional = true }
 
 # native
-[target.'cfg(not(target_arch = "wasm32"))'.dependencies]
+# [target.'cfg(not(target_arch = "wasm32"))'.dependencies] # commented because of build script: "cd ./rerun && pixi run rerun-build-web"
 crossbeam.workspace = true
 notify.workspace = true
 
